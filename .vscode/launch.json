@@ -10,9 +10,9 @@
             "name": "Launch Program",
             "program": "${workspaceFolder}/main.js",
             "args": [
-                "ins/a_example.in"
+                // "ins/a_example.in"
                 // "ins/b_should_be_easy.in",
-                // "ins/c_no_hurry.in",
+                "ins/c_no_hurry.in"
                 // "ins/d_metropolis.in",
                 // "ins/e_high_bonus.in"
               ]
@@ -22,6 +22,25 @@
             "request": "launch",
             "name": "Launch All",
             "program": "${workspaceFolder}/la.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Check result",
+            "program": "${workspaceFolder}/check.js",
+            "args": [
+                "ins/a_example.in.out"
+                // "ins/b_should_be_easy.in.out"
+                // "ins/c_no_hurry.in.out"
+                // "ins/d_metropolis.in.out"
+                // "ins/e_high_bonus.in.out"
+              ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Check All",
+            "program": "${workspaceFolder}/ca.js"
         }
     ]
 }

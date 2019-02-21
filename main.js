@@ -25,7 +25,7 @@ rides.forEach(r => {
     ldf = ld1 + ld2;
     lf = r.lf + ldf;
     tabr = v.t + ldf;
-    w = tabr >= r.s ? 0 : r.s - tabr;
+    w = tabr + 1 >= r.s ? 0 : r.s - tabr;
     tf = v.t + lf + w;
     if (tf < r.f) {
       co.push({tf, r, v})

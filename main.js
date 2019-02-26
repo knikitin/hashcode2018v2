@@ -27,15 +27,16 @@ rides.forEach(r => {
     tabr = v.t + ldf;
     w = tabr + 1 >= r.s ? 0 : r.s - tabr;
     tf = v.t + lf + w;
+    tb = tf;
     if (tf < r.f) {
-      co.push({tf, r, v})
+      co.push({tb, tf, r, v})
     }
   }
   if (co.length) {
-    co.sort((a,b) => a.tf - b.tf)
+    co.sort((a,b) => a.tb - b.tb)
     co[0].r.v = co[0].v;
     co[0].v.r.push(co[0].r);
-    co[0].v.t = co[0].v.t + co[0].tf;
+    co[0].v.t = co[0].tf;
     co[0].v.x = co[0].r.x; 
     co[0].v.y = co[0].r.y; 
   }

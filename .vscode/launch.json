@@ -20,12 +20,6 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch All",
-            "program": "${workspaceFolder}/la.js"
-        },
-        {
-            "type": "node",
-            "request": "launch",
             "name": "Check result",
             "program": "${workspaceFolder}/check.js",
             "args": [
